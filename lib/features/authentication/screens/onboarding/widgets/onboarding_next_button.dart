@@ -1,3 +1,4 @@
+import 'package:ecommerce/features/authentication/controllers.onboarding/onboarding_controller.dart';
 import 'package:ecommerce/utils/constants/colors.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/device/device_utility.dart';
@@ -17,7 +18,7 @@ class OnBoardingNextButton extends StatelessWidget {
       right: TSizes.defaultSpace,
       bottom: TDeviceUtils.getBottomNavigationBarHeight(),
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () => OnBoardingController.instance.nextPage(),
         style: ElevatedButton.styleFrom(
             shape: const CircleBorder(),
             backgroundColor: dark ? TColors.primary : Colors.black),

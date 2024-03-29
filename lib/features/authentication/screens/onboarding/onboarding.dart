@@ -54,7 +54,7 @@ class OnBoardingScreen extends StatelessWidget {
           const OnBoardingDotNavigation(),
 
           ///Circular Button
-          OnBoardingNextButton(),
+          const OnBoardingNextButton(),
         ],
       ),
     );
