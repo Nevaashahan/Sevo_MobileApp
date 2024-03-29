@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import 'package:ecommerce/common/styles/spacing_styles.dart';
@@ -23,12 +24,15 @@ class LoginScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               // Logo, Title & Sub-Title
-              Column(
+             Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Image(
-                    height: 150,
-                    image: AssetImage(dark ? TImages.lightAppLogo : TImages.darkAppLogo),
+                  Align(
+                    alignment: Alignment.center,
+                    child: Image(
+                      height: 150,
+                      image: AssetImage(dark ? TImages.lightAppLogo : TImages.darkAppLogo),
+                    ),
                   ),
                   Text(
                     TTexts.loginTitle,
@@ -41,6 +45,8 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ],
               ),
+
+
 
               /// Form
               Form(
@@ -82,14 +88,18 @@ class LoginScreen extends StatelessWidget {
                         ],
                       ),
                       const SizedBox(height: TSizes.spaceBtwSections),
-
+                     //sign in button
                       SizedBox(
                         width: double.infinity,
                         child: ElevatedButton(
                           onPressed: () {},
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(Colors.blue[900]!), // Change the color here
+                          ),
                           child: const Text(TTexts.signIn),
                         ),
                       ),
+
                       const SizedBox(height: TSizes.spaceBtwItems),
 
                       // Create Account Button
@@ -100,7 +110,7 @@ class LoginScreen extends StatelessWidget {
                           child: const Text(TTexts.createAccount),
                         ),
                       ),
-                      const SizedBox(height: TSizes.spaceBtwItems),
+                      //const SizedBox(height: TSizes.spaceBtwItems),
                     ],
                   ),
                 ),
@@ -110,16 +120,44 @@ class LoginScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Divider(
-                    color: dark ? TColors.darkGrey : TColors.grey,
-                    thickness: 0.5,
-                    indent: 60,
-                    endIndent: 5,
-                  ),
+                   Flexible(child: Divider(color: dark ? TColors.darkGrey: TColors.grey, thickness: 0.5, indent: 60, endIndent: 5,)),
+                   Text(TTexts.orSignInwith.capitalize!, style: Theme.of(context).textTheme.labelMedium),
+                   Flexible(child: Divider(color: dark ? TColors.darkGrey: TColors.grey, thickness: 0.5, indent: 5,endIndent: 60,)),
                 ],
-              )
+              ),
+
+              const SizedBox(height: TSizes.spaceBtwItems),
 
               // Footer
+
+              Row (
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(border: Border.all(color: TColors.grey), borderRadius: BorderRadius.circular(100)),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: const Image(
+                        width: TSizes.iconMd,
+                        height: TSizes.iconMd,
+                        image: AssetImage(TImages.google),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: TSizes.spaceBtwItems),
+                  Container(
+                    decoration: BoxDecoration(border: Border.all(color: TColors.grey), borderRadius: BorderRadius.circular(100)),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: const Image(
+                        width: TSizes.iconMd,
+                        height: TSizes.iconMd,
+                        image: AssetImage(TImages.facebook),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
