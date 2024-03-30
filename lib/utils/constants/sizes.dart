@@ -30,6 +30,7 @@ class TSizes {
   static const double defaultSpace = 24.0;
   static const double spaceBtwItems = 16.0;
   static const double spaceBtwSections = 32;
+  static const double spaceBtwSections2 = 20;
 // Border radius
   static const double borderRadius5m = 4.0;
 
@@ -46,6 +47,8 @@ class TSizes {
 // Input field
   static const double inputFieldRadius = 12.0;
   static const double spaceBtwInputFields = 32.0;
+  static const double spaceBtwInputFields2 = 10.0;
+  static const double spaceBtwInputFields3 = 12.0;
 // Card sizes
   static const double cardRadiusLg = 16.0;
   static const double cardRadiusMd = 12.0;
@@ -58,5 +61,4 @@ class TSizes {
   static const double loadingIndicatorSize = 36.8;
 // Grid view spacing
   static const double gridViewSpacing = 16.0;
-
 }
