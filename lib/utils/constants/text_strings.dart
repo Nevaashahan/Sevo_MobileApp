@@ -14,8 +14,6 @@ class TTexts {
   static const String onBoardingSubTitle3 =
       "From Our Doorstep to Yours Swift, Secure, and Contactless Delivery!";
 
-
-
   //Authentication Form Text
   static const String firstName = "First Name";
   static const String lastName = "Last Name";
@@ -42,7 +40,6 @@ class TTexts {
   static const String resend = "Re-send Email";
 // Authentication Headings Text
 
-
 //--Home
 
   static const String loginTitle = "Welcome Back";
@@ -60,6 +57,7 @@ class TTexts {
   static const String and = "&";
   static const String accountcreatedSuccessfully =
       "Your account created successfully";
+  static const String accountcreatedSuccessfullySubtitle = "Welcome to your Ultimate Shopping Destination Your Account is Created. Unleash the Joy of Seamless Online Shopping!";
   static const String changeYourPasswordTitle =
       "Email send change your password";
   static const String changeYourPasswordSubTitle =
