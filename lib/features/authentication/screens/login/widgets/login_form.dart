@@ -2,6 +2,7 @@ import 'package:ecommerce/features/authentication/screens/password_configuration
 import 'package:ecommerce/features/authentication/screens/signup/signup.dart';
 import 'package:ecommerce/utils/constants/sizes.dart';
 import 'package:ecommerce/utils/constants/text_strings.dart';
+import 'package:ecommerce/utils/navigation_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
@@ -49,7 +50,8 @@ class TLoginForm extends StatelessWidget {
                 ),
                 // Forget Password
                 TextButton(
-                    onPressed: () => Get.to(() => const ForgetPassword()), child: const Text(TTexts.forgetPassword)),
+                    onPressed: () => Get.to(() => const ForgetPassword()),
+                    child: const Text(TTexts.forgetPassword)),
               ],
             ),
             const SizedBox(height: TSizes.spaceBtwSections),
@@ -57,7 +59,7 @@ class TLoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () => Get.to(() => const NavigationMenu()),
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all<Color>(
                       Colors.blue[900]!), // Change the color here
