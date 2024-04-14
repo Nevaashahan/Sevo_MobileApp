@@ -29,4 +29,21 @@ class TImages {
   static const String banner1 = "assets/images/banner1.png";
   static const String banner2 = "assets/images/banner2.png";
   static const String banner3 = "assets/images/banner3.png";
+
+  static const String connector = "assets/icons/brands/connector.jpeg";
+  static const String mcb_1 = "assets/icons/brands/mcb_1.jpeg";
+  static const String mcb_2 = "assets/icons/brands/mcb_2.jpeg";
+  static const String mcb_3 = "assets/icons/brands/mcb_3.jpeg";
+  static const String mcb_4 = "assets/icons/brands/mcb_4.jpeg";
+  static const String panels = "assets/icons/brands/panels.jpeg";
+  static const String pcb_1 = "assets/icons/brands/pcb_1.jpeg";
+  static const String pcb_2 = "assets/icons/brands/pcb_2.jpeg";
+  static const String pcb_3 = "assets/icons/brands/pcb_3.jpeg";
+  static const String pcb_4 = "assets/icons/brands/pcb_4.jpeg";
+  static const String pcb_5 = "assets/icons/brands/pcb_5.jpeg";
+  // ignore: constant_identifier_names
+  static const String wire_cord = "assets/icons/brands/wire_cord.jpeg";
+  // ignore: constant_identifier_names
+  static const String solar_panel = "assets/icons/brands/solar-panel.png";
+
 }
