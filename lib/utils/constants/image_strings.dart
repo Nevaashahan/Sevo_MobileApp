@@ -44,6 +44,11 @@ class TImages {
   // ignore: constant_identifier_names
   static const String wire_cord = "assets/icons/brands/wire_cord.jpeg";
   // ignore: constant_identifier_names
-  static const String solar_panel = "assets/icons/brands/solar-panel.png";
-
+  static const String solar_panel = "assets/icons/brands/toys.png";
+  // ignore: constant_identifier_names
+  static const String solar_banner_1 = "assets/images/banners/banner_1.jpeg";
+  // ignore: constant_identifier_names
+  static const String solar_banner_2 = "assets/images/banners/banner_2.jpg";
+  // ignore: constant_identifier_names
+  static const String solar_banner_3 = "assets/images/banners/banner_3.jpg";
 }

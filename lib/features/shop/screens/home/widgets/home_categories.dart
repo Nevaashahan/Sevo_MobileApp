@@ -19,8 +19,9 @@ class THomeCategories extends StatelessWidget {
         itemBuilder: (_, index) {
           return TVerticalImageText(
             image: TImages.solar_panel,
-            title: 'Solar',
+            title: 'Solar pane',
             onTap: () {},
+            
           );
         },
       ),
